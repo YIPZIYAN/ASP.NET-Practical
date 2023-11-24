@@ -15,7 +15,8 @@
             <table style="width: 100%;">
                 <tr>
                     <td>
-                        Practical 2</td>
+                        <asp:Label ID="Label1" runat="server" Text="PRACTICAL 2"></asp:Label>
+                    </td>
                 </tr>
                 <tr>
                     <td>
