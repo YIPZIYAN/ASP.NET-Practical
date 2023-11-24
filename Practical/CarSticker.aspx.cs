@@ -16,14 +16,14 @@ namespace Practical
 
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
-            //lblResult.Text = "Name: " + txtName.Text + "</br>" +
-            //    "ID: " + txtID.Text + "</br>" +
-            //    "Joined Date: " + calDate.SelectedDate.ToShortDateString() + "</br>" +
-            //    "Gender: " + radGender.SelectedValue + "</br>" +
-            //    "Programme: " + ddlProgramme.Text + "</br>" +
-            //    "Year of Study: " + ddlYear.SelectedValue + "</br>" +
-            //    "Vehicle's Registration Number: " + txtReg.Text + "</br>" +
-            //    "Vehicle's Type: " + ddlType.Text + "</br>";
+            lblResult.Text = "Name: " + txtName.Text + "</br>" +
+                "ID: " + txtID.Text + "</br>" +
+                "Joined Date: " + calDate.SelectedDate.ToShortDateString() + "</br>" +
+                "Gender: " + radGender.SelectedValue + "</br>" +
+                "Programme: " + ddlProgramme.Text + "</br>" +
+                "Year of Study: " + ddlYear.SelectedValue + "</br>" +
+                "Vehicle's Registration Number: " + txtReg.Text + "</br>" +
+                "Vehicle's Type: " + ddlType.Text + "</br>";
         }
     }
 }
