@@ -2,11 +2,11 @@
     Inherits="Practical.home" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-<body>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+
     <form id="form1" runat="server">
         <div>
-            <table style="width:100%;">
+            <table style="width: 100%;">
                 <tr>
                     <td class="auto-style1">Name</td>
                     <td>
@@ -86,6 +86,6 @@
             </table>
         </div>
     </form>
-</body>
+
 </asp:Content>
 
