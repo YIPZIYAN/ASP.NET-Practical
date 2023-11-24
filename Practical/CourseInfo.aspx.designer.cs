@@ -11,7 +11,7 @@ namespace Practical
 {
 
 
-    public partial class home
+    public partial class CourseInfo
     {
 
         /// <summary>
