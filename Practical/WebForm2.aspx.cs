@@ -46,10 +46,15 @@ namespace Practical
             {
                 price = 6 * Convert.ToInt32(txtAdult.Text) + 4.3 * Convert.ToInt32(txtChild.Text);
             }
-            txtPrice.Text = "RM " + price.ToString("C");
+            txtPrice.Text =  price.ToString("C");
         }
 
         protected void Button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void txtPrice_TextChanged(object sender, EventArgs e)
         {
 
         }
