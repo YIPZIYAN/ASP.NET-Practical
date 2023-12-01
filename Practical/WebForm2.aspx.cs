@@ -57,7 +57,7 @@ namespace Practical
                 lblPriceSet3.Text = price3 + "";
             }
 
-            lblTotalPrice.Text = price1 + price2 + price3 + "";
+            lblTotalPrice.Text = price1 + price2 + price3+"";
 
         }
     }

@@ -11,23 +11,35 @@ namespace Practical
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(PreviousPage != null && PreviousPage.IsCrossPagePostBack)
+
+
+
+            if (PreviousPage != null && PreviousPage.IsCrossPagePostBack)
             {
-                if (PreviousPage.FindControl("cbSet1").Checked)
+                TextBox q1 = PreviousPage.FindControl("txtQ1") as TextBox;
+
+                TextBox q2 = PreviousPage.FindControl("txtQ2") as TextBox;
+
+
+                TextBox q3 = PreviousPage.FindControl("txtQ3") as TextBox;
+
+
+                Label total = PreviousPage.FindControl("lblTotalPrice") as Label;
+                if (Convert.ToInt32(q1.Text) > 0)
                 {
-                    lblOrder.Text = PreviousPage.FindControl("txtQ1").Text + " - Menu Set 1</br>";
+                    lblOrder.Text += q1.Text + " - Menu Set 1</br>";
                 }
-                if (PreviousPage.FindControl("cbSet2").Checked)
+                if (Convert.ToInt32(q2.Text) > 0)
                 {
-                    lblOrder.Text = PreviousPage.FindControl("txtQ2").Text + " - Menu Set 2</br>";
+                    lblOrder.Text += q2.Text + " - Menu Set 2</br>";
                 }
-                if (PreviousPage.FindControl("cbSet3").Checked)
+                if (Convert.ToInt32(q3.Text) > 0)
                 {
-                    lblOrder.Text = PreviousPage.FindControl("txtQ3").Text + " - Menu Set 3</br>";
+                    lblOrder.Text += q3.Text + " - Menu Set 3</br>";
                 }
 
-                lblOrder.Text = "Total Price = " +
-                    PreviousPage.FindControl("lblTotalPrice").ToString("C")
+                lblOrder.Text += "Total Price = " +
+                   total.Text
                     + "</br>";
             }
 

@@ -69,7 +69,7 @@
                         <asp:CheckBox ID="cbSet1" runat="server" Text="Set 1" />
                     </td>
                     <td class="auto-style8">
-                        <asp:TextBox ID="txtQ1" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtQ1" runat="server" TextMode="Number">0</asp:TextBox>
                     </td>
                     <td class="auto-style9">
                         <asp:Label ID="lblPriceSet1" runat="server"></asp:Label>
@@ -80,7 +80,7 @@
                         <asp:CheckBox ID="cbSet2" runat="server" Text="Set 2" />
                     </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="txtQ2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtQ2" runat="server" TextMode="Number">0</asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPriceSet2" runat="server"></asp:Label>
@@ -91,7 +91,7 @@
                         <asp:CheckBox ID="cbSet3" runat="server" Text="Set 3" />
                     </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="txtQ3" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtQ3" runat="server" TextMode="Number">0</asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPriceSet3" runat="server"></asp:Label>
@@ -111,7 +111,7 @@
         <asp:Button ID="btnCal" runat="server" OnClick="btnCal_Click" Text="Calculate" />
         <input id="Button1" type="reset" value="Cancel" /><br />
         <br />
-        <asp:Button ID="btnConfirm" runat="server" Text="Confirm Order" PostBackUrl="~/WebForm3.aspx" />
+        <asp:Button ID="btnConfirm" runat="server" Text="Confirm Order" PostBackUrl="~/WebForm3.aspx" OnClientClick="javascript:alert('This page is to confirm your breakfast order')" />
     </form>
 </body>
 </html>
