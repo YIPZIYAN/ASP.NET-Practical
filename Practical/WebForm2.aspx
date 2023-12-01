@@ -66,7 +66,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style7">
-                        <asp:CheckBox ID="cbSet1" runat="server" Text="Set 1" />
+                        <asp:CheckBox ID="cbSet1" runat="server" Text="Set 1" AutoPostBack="True" OnCheckedChanged="cbSet1_CheckedChanged" />
                     </td>
                     <td class="auto-style8">
                         <asp:TextBox ID="txtQ1" runat="server" TextMode="Number">0</asp:TextBox>
@@ -77,7 +77,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:CheckBox ID="cbSet2" runat="server" Text="Set 2" />
+                        <asp:CheckBox ID="cbSet2" runat="server" Text="Set 2" AutoPostBack="True" />
                     </td>
                     <td class="auto-style6">
                         <asp:TextBox ID="txtQ2" runat="server" TextMode="Number">0</asp:TextBox>
@@ -88,7 +88,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style5">
-                        <asp:CheckBox ID="cbSet3" runat="server" Text="Set 3" />
+                        <asp:CheckBox ID="cbSet3" runat="server" Text="Set 3" AutoPostBack="True" />
                     </td>
                     <td class="auto-style6">
                         <asp:TextBox ID="txtQ3" runat="server" TextMode="Number">0</asp:TextBox>

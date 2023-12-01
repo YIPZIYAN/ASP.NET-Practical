@@ -60,5 +60,25 @@ namespace Practical
             lblTotalPrice.Text = price1 + price2 + price3+"";
 
         }
+
+        protected void cbSet1_CheckedChanged(object sender, EventArgs e)
+        {
+            if(!cbSet1.Checked) {
+                lblPriceSet1.Text = "";
+                txtQ1.Text = "0";
+            }
+
+            if (!cbSet2.Checked)
+            {
+                lblPriceSet2.Text = "";
+                txtQ2.Text = "0";
+            }
+
+            if (!cbSet3.Checked)
+            {
+                lblPriceSet3.Text = "";
+                txtQ3.Text = "0";
+            }
+        }
     }
 }
