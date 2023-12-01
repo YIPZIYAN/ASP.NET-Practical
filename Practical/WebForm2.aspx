@@ -22,6 +22,17 @@
         .auto-style6 {
             width: 154px;
         }
+        .auto-style7 {
+            width: 214px;
+            height: 29px;
+        }
+        .auto-style8 {
+            width: 154px;
+            height: 29px;
+        }
+        .auto-style9 {
+            height: 29px;
+        }
     </style>
 </head>
 <body>
@@ -35,10 +46,10 @@
                 <tr>
                     <td class="auto-style2">Breakfast Set</td>
                     <td>
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                            <asp:ListItem>Set1</asp:ListItem>
-                            <asp:ListItem>Set2</asp:ListItem>
-                            <asp:ListItem>Set3</asp:ListItem>
+                        <asp:RadioButtonList ID="radSet" runat="server" AutoPostBack="True" OnSelectedIndexChanged="RadioButtonList1_SelectedIndexChanged">
+                            <asp:ListItem Value="1">Set1</asp:ListItem>
+                            <asp:ListItem Value="2">Set2</asp:ListItem>
+                            <asp:ListItem Value="3">Set3</asp:ListItem>
                         </asp:RadioButtonList>
                     </td>
                 </tr>
@@ -54,40 +65,53 @@
                     <td>Total(RM)</td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">
-                        <asp:CheckBoxList ID="CheckBoxList1" runat="server">
-                            <asp:ListItem>Set 1</asp:ListItem>
-                            <asp:ListItem>Set 2</asp:ListItem>
-                            <asp:ListItem>Set 3</asp:ListItem>
-                        </asp:CheckBoxList>
+                    <td class="auto-style7">
+                        <asp:CheckBox ID="cbSet1" runat="server" Text="Set 1" />
                     </td>
-                    <td class="auto-style6">
-                        <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <td class="auto-style8">
+                        <asp:TextBox ID="txtQ1" runat="server"></asp:TextBox>
                     </td>
-                    <td>
+                    <td class="auto-style9">
                         <asp:Label ID="lblPriceSet1" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:CheckBox ID="cbSet2" runat="server" Text="Set 2" />
+                    </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtQ2" runat="server"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPriceSet2" runat="server"></asp:Label>
                     </td>
                 </tr>
                 <tr>
-                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:CheckBox ID="cbSet3" runat="server" Text="Set 3" />
+                    </td>
                     <td class="auto-style6">
-                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txtQ3" runat="server"></asp:TextBox>
                     </td>
                     <td>
                         <asp:Label ID="lblPriceSet3" runat="server"></asp:Label>
                     </td>
                 </tr>
+                <tr>
+                    <td class="auto-style5">
+                        &nbsp;</td>
+                    <td class="auto-style6">
+                        Total(RM)</td>
+                    <td>
+                        <asp:Label ID="lblTotalPrice" runat="server"></asp:Label>
+                    </td>
+                </tr>
             </table>
         </div>
+        <asp:Button ID="btnCal" runat="server" OnClick="btnCal_Click" Text="Calculate" />
+        <input id="Button1" type="reset" value="Cancel" /><br />
+        <br />
+        <asp:Button ID="btnConfirm" runat="server" Text="Confirm Order" PostBackUrl="~/WebForm3.aspx" />
     </form>
 </body>
 </html>
