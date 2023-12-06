@@ -76,6 +76,7 @@
       <DependentUpon>NORTHWND.MDF</DependentUpon>
     </Content>
     <Content Include="DataBound.aspx" />
+    <Content Include="lab1.aspx" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
@@ -86,6 +87,13 @@
     </Compile>
     <Compile Include="DataBound.aspx.designer.cs">
       <DependentUpon>DataBound.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="lab1.aspx.cs">
+      <DependentUpon>lab1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="lab1.aspx.designer.cs">
+      <DependentUpon>lab1.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebForm1.aspx.cs">
